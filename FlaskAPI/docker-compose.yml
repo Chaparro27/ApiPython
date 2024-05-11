@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  flaskapp:
+    build: .
+    ports:
+      - 5002:5002
+    volumes:
+      - ./:/app
+    environment:
+      - MONGOURI=mongodb+srv://desarrollo_lap:MhkcUzOiA35jzwym@cluster0.stven.mongodb.net/?retryWrites=true&w=majority
